@@ -1,43 +1,41 @@
 Expressions:
 
-1. Write a program to find length distance between two points.
+1. Write a program to find area of a triangle given base and altitude 
 
 Expressions and Functions:
 
-2. Write a program to find the weight of the camel given height, length and stomach radius.
-weight = pi * stomach_raduius^3 * sqrt(height * length). using four functions and following function signatures. 5 marks
+2. Write a program to find area of a triangle using 4 functions. 5 marks
 
-float input_radius();
-float input_heigth();
-float input_length();
-float find_weight(float radius, float height, float length);
-void output(float radius, float height, float length, float weight);
+float input_base();
+float input_altitude();
+float find_area(float base, flaot altitude);
+void output(float base,  float altitude, float area);
 and int main()
 
 Expression, Functions and Structures.
 
-3. Write a program to find the weight of the camel given height, length and stomach radius.
-weight = pi * stomach_raduius^3 * sqrt(height * length). using four functions and following function signatures. 5 marks
-struct camel {
-	float radius, height, length,weight;
+3. Write a program to find the area of triangle given base and altitude.
+area = 1/2 * base * altitude. using four functions and following function signatures. 5 marks
+struct traingle {
+	float base, altitude, area;
 };
-typedef struct camel Camel;
-Camel input(); /* do not take weight as input from the user */
-float find_weight(Camel c); /* pass by value */
+typedef struct triangle Tri;
+Tri input(); /* do not take area as input from the user */
+float find_area(Tri t); /* pass by value */
 or 
-void find_weight(Camel *c); /*passing address variable */
-void output(Camel c);
+void find_are(Tri *t); /*passing address variable */
+void output(Tri t);
 and int main()
 
  if then else statements
 
-4. When a camel is 
+4. When a triangle is 
 
-a) sick its stomach_radius is less than height and less than length.
-b) happy its height is less than length and less than stomach_radius.
-c) tense its length is less than height and stomach_radius.
+a) perfect its base is egual to altitude.
+b) //balance its height is less than length and less than stomach_radius.
+c) imbalanced its its base is not egual to altitude.
 
-Write a program to find whether a camel is sick, happy, or tense.
+Write a program to find whether a triangle is equal or balanced.
 With functions and structure - 5 marks. 
 
 Loops and sequences
@@ -51,7 +49,7 @@ stop when the next term is less 0.000001, With four functions - 5 marks.
 
 
 Array processing
-With functions - 5 marks.
+6. With functions - 5 marks.
 use following function prototypes.
 void input(int n, int a[n]);
 float odd_average(int n, int a[n]);
@@ -59,14 +57,14 @@ void output(int n, int a[n]); /* print all the elements of the array and then th
 and main.
 
 Strings
-Write a program to find if the name of the camel is a nice name.
-Camels name is nice if it has at least 2 vowels and 2 consonants in it.
+7. Write a program to find if the name of the traingle is a nice name.
+triangle name is nice if it has at least 2 vowels and 2 consonants in it.
 with four functions - 5 marks. 
 
 
 Array of Structures
 
-Write program to find the weight of a truck load of n camels. 
+8. Write program to find the weight of a truck load of n camels. 
 Take input 
 a)  truck weight and
 b)  height, radius and length of n camels
